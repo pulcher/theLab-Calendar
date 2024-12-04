@@ -1,0 +1,502 @@
+[
+	{
+		"id": 1,
+		"name": "Intro to 3D Printing",
+		"description": "Please bring a computer!",
+		"start": 1727038800,
+		"end": 1727046000,
+		"membersOnly": false,
+		"totalSeats": 20,
+		"availableSeats": 5
+	},
+	{
+		"id": 2,
+		"name": "Woodshop Night",
+		"description": "Come join us in the woodshop where you can learn how to operate the tools of the woodshop in a safe and productive way.",
+		"start": 1727218800,
+		"end": 1727222400,
+		"membersOnly": false,
+		"totalSeats": 20,
+		"availableSeats": 5
+	},
+	{
+		"id": 3,
+		"name": "Weekly Fiber night @ #stitchlab",
+		"description": "Fiber nights at TheLab.ms every Tuesday night. All types of fiber crafting welcome.",
+		"start": 1727222400,
+		"end": 1727229600,
+		"membersOnly": false,
+		"totalSeats": 20,
+		"availableSeats": 5
+	},
+	{
+		"id": 4,
+		"name": "New Member Keyfob Pickup & Tours",
+		"description": "New members come get your keyfob assigned and activated! Potential members, come see the space!",
+		"start": 1727222400,
+		"end": 1727226000,
+		"membersOnly": false,
+		"totalSeats": 20,
+		"availableSeats": 5
+	},
+	{
+		"id": 5,
+		"name": "Game Night (Member event)",
+		"description": "Come hang out and play games. Reserved for dues-paying members and their guests.",
+		"start": 1727481600,
+		"end": 1727470800,
+		"membersOnly": true,
+		"totalSeats": 20,
+		"availableSeats": 5
+	},
+	{
+		"id": 6,
+		"name": "Woodshop Night",
+		"description": "Join us in the woodshop to learn safe and productive tool operation.",
+		"start": 1727823600,
+		"end": 1727827200,
+		"membersOnly": false,
+		"totalSeats": 20,
+		"availableSeats": 5
+	},
+	{
+		"id": 7,
+		"name": "Weekly Fiber night @ #stitchlab",
+		"description": "All types of fiber crafting welcome. Bring your project up to #StitchLab.",
+		"start": 1727827200,
+		"end": 1727834400,
+		"membersOnly": false,
+		"totalSeats": 20,
+		"availableSeats": 5
+	},
+	{
+		"id": 8,
+		"name": "New Member Keyfob Pickup & Tours",
+		"description": "New members come get your keyfob assigned and activated!",
+		"start": 1727827200,
+		"end": 1727830800,
+		"membersOnly": false,
+		"totalSeats": 20,
+		"availableSeats": 5
+	},
+	{
+		"id": 9,
+		"name": "Monthly Membership Meeting",
+		"description": "Open to all members and guests. Get to know each other and discover opportunities at the makerspace.",
+		"start": 1728003600,
+		"end": 1728005400,
+		"membersOnly": false,
+		"totalSeats": 20,
+		"availableSeats": 5
+	},
+	{
+		"id": 10,
+		"name": "Game Night (Member event)",
+		"description": "Reserved for dues-paying members and their guests.",
+		"start": 1728086400,
+		"end": 1728093600,
+		"membersOnly": true,
+		"totalSeats": 20,
+		"availableSeats": 5
+	},
+	{
+		"id": 11,
+		"name": "Coding Challenge Night",
+		"description": "Compete in coding challenges. Open to all skill levels.",
+		"start": 1731000000,
+		"end": 1731007200,
+		"membersOnly": false,
+		"totalSeats": 20,
+		"availableSeats": 10
+	},
+	{
+		"id": 12,
+		"name": "Electronics Repair Night",
+		"description": "Bring your broken electronics and repair them with guidance.",
+		"start": 1731100000,
+		"end": 1731107200,
+		"membersOnly": false,
+		"totalSeats": 15,
+		"availableSeats": 8
+	},
+	{
+		"id": 13,
+		"name": "Advanced Robotics Workshop",
+		"description": "An advanced session on robotics. Previous experience recommended.",
+		"start": 1731150000,
+		"end": 1731158000,
+		"membersOnly": true,
+		"totalSeats": 10,
+		"availableSeats": 5
+	},
+	{
+		"id": 14,
+		"name": "Ceramics Workshop",
+		"description": "Introduction to ceramic arts. Hands-on workshop with basic techniques.",
+		"start": 1731200000,
+		"end": 1731207000,
+		"membersOnly": false,
+		"totalSeats": 12,
+		"availableSeats": 6
+	},
+	{
+		"id": 15,
+		"name": "Creative Coding Meetup",
+		"description": "An informal meetup for creative coders to collaborate on projects.",
+		"start": 1731250000,
+		"end": 1731257200,
+		"membersOnly": false,
+		"totalSeats": 25,
+		"availableSeats": 20
+	},
+	{
+		"id": 16,
+		"name": "Cosplay Crafting Workshop",
+		"description": "Learn techniques to create cosplay costumes and props.",
+		"start": 1731300000,
+		"end": 1731307000,
+		"membersOnly": true,
+		"totalSeats": 15,
+		"availableSeats": 10
+	},
+	{
+		"id": 17,
+		"name": "Open Studio Night",
+		"description": "An open night to work on projects in the studio. Meet fellow makers!",
+		"start": 1731350000,
+		"end": 1731357000,
+		"membersOnly": false,
+		"totalSeats": 20,
+		"availableSeats": 15
+	},
+	{
+		"id": 18,
+		"name": "Youth STEM Workshop",
+		"description": "A hands-on STEM workshop for ages 12-18.",
+		"start": 1731400000,
+		"end": 1731407000,
+		"membersOnly": false,
+		"totalSeats": 30,
+		"availableSeats": 25
+	},
+	{
+		"id": 19,
+		"name": "3D Printing Demo",
+		"description": "Demonstration of 3D printing techniques and equipment.",
+		"start": 1731450000,
+		"end": 1731457000,
+		"membersOnly": true,
+		"totalSeats": 20,
+		"availableSeats": 10
+	},
+	{
+		"id": 20,
+		"name": "Digital Marketing Basics",
+		"description": "An introduction to digital marketing strategies and platforms.",
+		"start": 1731500000,
+		"end": 1731507200,
+		"membersOnly": false,
+		"totalSeats": 25,
+		"availableSeats": 15
+	},
+	{
+		"id": 21,
+		"name": "Hand Tool Techniques",
+		"description": "Learn proper techniques for using hand tools safely.",
+		"start": 1731550000,
+		"end": 1731557000,
+		"membersOnly": false,
+		"totalSeats": 10,
+		"availableSeats": 8
+	},
+	{
+		"id": 22,
+		"name": "Blockchain Development Workshop",
+		"description": "Introduction to blockchain technology and development.",
+		"start": 1731600000,
+		"end": 1731607200,
+		"membersOnly": true,
+		"totalSeats": 15,
+		"availableSeats": 5
+	},
+	{
+		"id": 23,
+		"name": "Makerspace Orientation",
+		"description": "Orientation session for new makerspace members.",
+		"start": 1731650000,
+		"end": 1731656000,
+		"membersOnly": false,
+		"totalSeats": 30,
+		"availableSeats": 20
+	},
+	{
+		"id": 24,
+		"name": "Painting Workshop",
+		"description": "Acrylic painting basics. No experience necessary.",
+		"start": 1731700000,
+		"end": 1731707200,
+		"membersOnly": false,
+		"totalSeats": 15,
+		"availableSeats": 10
+	},
+	{
+		"id": 25,
+		"name": "CAD Design Basics",
+		"description": "Learn CAD design basics for 3D modeling.",
+		"start": 1731750000,
+		"end": 1731757200,
+		"membersOnly": true,
+		"totalSeats": 15,
+		"availableSeats": 7
+	},
+	{
+		"id": 26,
+		"name": "Photography 101",
+		"description": "Introductory photography workshop covering camera basics.",
+		"start": 1731800000,
+		"end": 1731807200,
+		"membersOnly": false,
+		"totalSeats": 10,
+		"availableSeats": 6
+	},
+	{
+		"id": 27,
+		"name": "Leatherworking Basics",
+		"description": "Introduction to leatherworking, with a focus on creating simple items.",
+		"start": 1731850000,
+		"end": 1731857000,
+		"membersOnly": true,
+		"totalSeats": 15,
+		"availableSeats": 10
+	},
+	{
+		"id": 28,
+		"name": "Screen Printing Techniques",
+		"description": "Learn the basics of screen printing for custom designs.",
+		"start": 1731900000,
+		"end": 1731907200,
+		"membersOnly": false,
+		"totalSeats": 10,
+		"availableSeats": 8
+	},
+	{
+		"id": 29,
+		"name": "Python for Beginners",
+		"description": "A beginner workshop on Python programming.",
+		"start": 1731950000,
+		"end": 1731957200,
+		"membersOnly": false,
+		"totalSeats": 20,
+		"availableSeats": 10
+	},
+	{
+		"id": 30,
+		"name": "Arduino Basics",
+		"description": "Hands-on workshop for Arduino programming and circuit building.",
+		"start": 1732000000,
+		"end": 1732007200,
+		"membersOnly": true,
+		"totalSeats": 15,
+		"availableSeats": 8
+	},
+	{
+		"id": 31,
+		"name": "Intro to 3D Modeling",
+		"description": "Learn the basics of 3D modeling for beginners.",
+		"start": 1732050000,
+		"end": 1732057200,
+		"membersOnly": false,
+		"totalSeats": 20,
+		"availableSeats": 15
+	},
+	{
+		"id": 32,
+		"name": "Creative Writing Workshop",
+		"description": "Join us for a creative writing session to improve your skills.",
+		"start": 1732053600,
+		"end": 1732057200,
+		"membersOnly": false,
+		"totalSeats": 15,
+		"availableSeats": 10
+	},
+	{
+		"id": 33,
+		"name": "Photography Fundamentals",
+		"description": "Beginner's photography workshop on camera settings and techniques.",
+		"start": 1732100000,
+		"end": 1732104000,
+		"membersOnly": false,
+		"totalSeats": 12,
+		"availableSeats": 8
+	},
+	{
+		"id": 34,
+		"name": "Machine Learning Basics",
+		"description": "Introduction to machine learning concepts and tools.",
+		"start": 1732150000,
+		"end": 1732153600,
+		"membersOnly": true,
+		"totalSeats": 15,
+		"availableSeats": 12
+	},
+	{
+		"id": 35,
+		"name": "Knitting Circle",
+		"description": "Join us for a relaxing knitting session with other makers.",
+		"start": 1732200000,
+		"end": 1732203600,
+		"membersOnly": false,
+		"totalSeats": 20,
+		"availableSeats": 18
+	},
+	{
+		"id": 36,
+		"name": "Game Development 101",
+		"description": "Introductory course to game development for beginners.",
+		"start": 1732250000,
+		"end": 1732257200,
+		"membersOnly": false,
+		"totalSeats": 20,
+		"availableSeats": 12
+	},
+	{
+		"id": 37,
+		"name": "Digital Illustration Workshop",
+		"description": "Learn digital illustration techniques using popular software.",
+		"start": 1732300000,
+		"end": 1732307200,
+		"membersOnly": false,
+		"totalSeats": 15,
+		"availableSeats": 10
+	},
+	{
+		"id": 38,
+		"name": "CNC Machine Introduction",
+		"description": "Hands-on intro to CNC machines for new members.",
+		"start": 1732350000,
+		"end": 1732357200,
+		"membersOnly": true,
+		"totalSeats": 12,
+		"availableSeats": 7
+	},
+	{
+		"id": 39,
+		"name": "Pottery Class",
+		"description": "Learn the basics of pottery and wheel throwing.",
+		"start": 1732400000,
+		"end": 1732403600,
+		"membersOnly": false,
+		"totalSeats": 10,
+		"availableSeats": 6
+	},
+	{
+		"id": 40,
+		"name": "Sewing and Alterations",
+		"description": "Learn how to sew and make alterations to clothes.",
+		"start": 1732450000,
+		"end": 1732453600,
+		"membersOnly": false,
+		"totalSeats": 15,
+		"availableSeats": 12
+	},
+	{
+		"id": 41,
+		"name": "3D Printing Q&A",
+		"description": "Ask questions about 3D printing and get expert advice.",
+		"start": 1732500000,
+		"end": 1732503600,
+		"membersOnly": false,
+		"totalSeats": 10,
+		"availableSeats": 8
+	},
+	{
+		"id": 42,
+		"name": "Arduino Project Night",
+		"description": "Work on your Arduino projects with help from mentors.",
+		"start": 1732550000,
+		"end": 1732557200,
+		"membersOnly": true,
+		"totalSeats": 15,
+		"availableSeats": 10
+	},
+	{
+		"id": 43,
+		"name": "VR Game Jam",
+		"description": "Compete in creating VR games during a 24-hour game jam event.",
+		"start": 1732600000,
+		"end": 1732613600,
+		"membersOnly": false,
+		"totalSeats": 20,
+		"availableSeats": 10
+	},
+	{
+		"id": 44,
+		"name": "AI and Ethics Discussion",
+		"description": "Join the discussion about the ethical implications of AI technologies.",
+		"start": 1732650000,
+		"end": 1732653600,
+		"membersOnly": false,
+		"totalSeats": 20,
+		"availableSeats": 12
+	},
+	{
+		"id": 45,
+		"name": "Intro to Podcasting",
+		"description": "Learn how to start your own podcast, from equipment to editing.",
+		"start": 1732700000,
+		"end": 1732703600,
+		"membersOnly": false,
+		"totalSeats": 15,
+		"availableSeats": 10
+	},
+	{
+		"id": 46,
+		"name": "Leatherworking Advanced Techniques",
+		"description": "For experienced crafters, dive deeper into leatherworking techniques.",
+		"start": 1732750000,
+		"end": 1732753600,
+		"membersOnly": true,
+		"totalSeats": 10,
+		"availableSeats": 6
+	},
+	{
+		"id": 47,
+		"name": "Drones and Robotics",
+		"description": "Learn how to build and control drones for projects.",
+		"start": 1732800000,
+		"end": 1732803600,
+		"membersOnly": true,
+		"totalSeats": 15,
+		"availableSeats": 8
+	},
+	{
+		"id": 48,
+		"name": "Web Design with HTML/CSS",
+		"description": "A beginner's guide to creating websites using HTML and CSS.",
+		"start": 1732850000,
+		"end": 1732853600,
+		"membersOnly": false,
+		"totalSeats": 20,
+		"availableSeats": 12
+	},
+	{
+		"id": 49,
+		"name": "December Kickoff Meetup",
+		"description": "Join us for a meetup to kick off the end-of-year projects.",
+		"start": 1732900000,
+		"end": 1732903600,
+		"membersOnly": false,
+		"totalSeats": 30,
+		"availableSeats": 20
+	},
+	{
+		"id": 50,
+		"name": "Holiday Craft Fair",
+		"description": "Sell or buy handmade crafts at our annual Holiday Craft Fair.",
+		"start": 1732950000,
+		"end": 1732957200,
+		"membersOnly": false,
+		"totalSeats": 50,
+		"availableSeats": 25
+	}
+]

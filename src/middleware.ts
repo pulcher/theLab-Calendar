@@ -1,42 +1,41 @@
-import { withAuth } from 'next-auth/middleware';
-import { getRoleByGroup } from './helpers/role';
-import { UserRoles } from './interfaces/roles';
+import { NextResponse } from 'next/server';
+import jwt from 'jsonwebtoken';
+import { NextRequest } from 'next/server';
+const secretKey = process.env.JWT_SECRET || '';
+import * as jose from 'jose';
 
-export default withAuth({
-	callbacks: {
-		authorized({ req, token }) {
-			if (!token || !token.groups) {
-				console.log('no token or groups');
-				return false;
-			}
-			const role = getRoleByGroup(token.groups);
-			console.log('Role: ', role);
-			if (role === UserRoles.ADMIN) {
-				console.log('Admitting because the user is an admin');
-				return true;
-			}
-			if (
-				req.nextUrl.pathname === '/create/queue' &&
-				role === UserRoles.APPROVE_EVENT
-			) {
-				console.log('Admitting because the user is an approver');
-				return true;
-			}
+const jwtConfig = {
+	secret: new TextEncoder().encode(secretKey),
+};
 
-			if (
-				(req.nextUrl.pathname === '/events/create' &&
-					role === UserRoles.CREATE_EVENT) ||
-				role === UserRoles.APPROVE_EVENT
-			) {
-				console.log('Admitting because the user is an approver or creator');
-				return true;
-			}
-			console.log('No match');
-			return false;
-		},
-	},
-});
+export async function middleware(req: NextRequest) {
+	// Get the accessToken from cookies
+	const token = req.cookies.get('accessToken')?.value;
+
+	if (!token) {
+		console.log('No [ACCESS-TOKEN] found');
+		return NextResponse.redirect(new URL('/', req.url));
+	}
+
+	try {
+		// Verify the JWT token
+		//console.log(secretKey, jwtConfig.secret);
+		//const decoded = jwt.verify(token, secretKey);
+		console.log('NERD! 🤓');
+		const decoded = jose.jwtVerify(token, jwtConfig.secret);
+		if (decoded && typeof decoded === 'object') {
+			return NextResponse.next();
+		} else {
+			console.log('Access denied - Role not authorized');
+			return NextResponse.redirect(new URL('/unauthorized', req.url)); // Redirect to unauthorized page
+		}
+	} catch (error) {
+		console.error('Token verification failed:', error);
+		return NextResponse.redirect(new URL('/login', req.url)); // Redirect to login on error
+	}
+}
 
 export const config = {
-	matcher: ['/events/create', '/admin', '/events/queue'],
+	// matcher: ['/events/create', '/admin', '/events/queue'],
+	matcher: [],
 };

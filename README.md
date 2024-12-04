@@ -12,6 +12,8 @@ yarn dev
 pnpm dev
 ```
 
+Create a .env file and fill it with the your desired values. Ensure you edit the values in userStore.json to ensure that the jwt values can be interpreted with your JWT_SECRET.
+
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.

@@ -1,15 +1,43 @@
 import Link from 'next/link';
-import { useSession, signIn, signOut } from 'next-auth/react';
 import Image from 'next/image';
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFacebookF, faMeetup, faTwitter, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+	faFacebookF,
+	faMeetup,
+	faTwitter,
+	faLinkedinIn,
+} from '@fortawesome/free-brands-svg-icons';
+import { useEffect, useState } from 'react';
+import { useRouter } from 'next/router';
+import { fetchUser, handleSignIn, handleSignOut } from '../helpers/auth';
 
 interface HeaderProps {
 	title: string;
 }
 
 export default function Header(props: HeaderProps) {
-	const { data: session } = useSession();
+	const [user, setUser] = useState<{ name: string; id: string } | null>(null);
+	const router = useRouter();
+
+	useEffect(() => {
+		const fetchData = async () => {
+			const userData = await fetchUser();
+			setUser(userData);
+		};
+		fetchData();
+	}, []);
+
+	const signIn = async () => {
+		router.push('/login');
+	};
+
+	const signOut = async () => {
+		if (await handleSignOut()) {
+			setUser(null);
+			router.push('/login');
+		}
+	};
+
 	return (
 		<header>
 			<nav
@@ -28,28 +56,43 @@ export default function Header(props: HeaderProps) {
 						/>
 					</Link>
 				</div>
-				<div className="lg:flex lg:flex lg:justify-center">
+				<div className="lg:flex lg:justify-center">
 					<div className="flex items-center">
-						{session ? (
-							<span className="text-sm font-semibold leading-6 text-gray-900 mr-3">
-								Welcome {session.user.name.split(' ')[0]},{' '}
-								<button onClick={() => signOut()}>Log out</button>
-							</span>
-						) : (
-							<span className="text-sm font-semibold leading-6 text-gray-900 mr-3">
-								Welcome Guest, <button onClick={() => signIn("keycloak")}>Log in</button>
-							</span>
-						)}
-						<a href="https://www.facebook.com/thelabms" className="text-gray-900 mr-2">
+						<span className="text-sm font-semibold leading-6 text-gray-900 mr-3">
+							{user ? (
+								<span className="text-sm font-semibold leading-6 text-gray-900 mr-3">
+									Welcome {user.name},{' '}
+									<button onClick={signOut}>Log out</button>
+								</span>
+							) : (
+								<span className="text-sm font-semibold leading-6 text-gray-900 mr-3">
+									Welcome Guest, <button onClick={signIn}>Log in</button>
+								</span>
+							)}
+						</span>
+
+						<a
+							href="https://www.facebook.com/thelabms"
+							className="text-gray-900 mr-2"
+						>
 							<FontAwesomeIcon icon={faFacebookF} />
 						</a>
-						<a href="https://www.meetup.com/thelab-ms" className="text-gray-900 mr-2">
+						<a
+							href="https://www.meetup.com/thelab-ms"
+							className="text-gray-900 mr-2"
+						>
 							<FontAwesomeIcon icon={faMeetup} />
 						</a>
-						<a href="https://twitter.com/thelab_ms" className="text-gray-900 mr-2">
+						<a
+							href="https://twitter.com/thelab_ms"
+							className="text-gray-900 mr-2"
+						>
 							<FontAwesomeIcon icon={faTwitter} />
 						</a>
-						<a href="https://www.linkedin.com/company/thelab-ms" className="text-gray-900 mr-2">
+						<a
+							href="https://www.linkedin.com/company/thelab-ms"
+							className="text-gray-900 mr-2"
+						>
 							<FontAwesomeIcon icon={faLinkedinIn} />
 						</a>
 					</div>
